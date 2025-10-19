@@ -37,12 +37,13 @@ A modern, real-time expense tracking application built with React and Firebase. 
    - Enable Firestore Database
    - Copy your Firebase configuration
 
-4. **Configure environment variables**
+4. **Configure environment variables (REQUIRED)**
    ```bash
    # Copy the example file
    cp .env.example .env.local
    
-   # Edit .env.local with your Firebase credentials
+   # Edit .env.local with your actual Firebase credentials
+   # This step is MANDATORY - the app will not work without these environment variables
    ```
 
 5. **Start the development server**
@@ -135,9 +136,12 @@ src/
 
 ## 🔒 Security Considerations
 
-- Firebase configuration is handled through environment variables
+- **CRITICAL**: All Firebase credentials are now stored in environment variables only
+- **NO HARDCODED SECRETS**: The application will not start without proper `.env.local` configuration
+- Firebase configuration requires all environment variables to be present
 - Firestore security rules should be configured for production
 - Input validation is implemented on the frontend
+- Never commit `.env.local` or any file containing actual credentials to version control
 
 ## 🚀 Deployment
 
