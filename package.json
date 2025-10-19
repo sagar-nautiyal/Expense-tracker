@@ -1,8 +1,8 @@
 {
-  "name": "create-react-app-with-tests",
+  "name": "react-expense-tracker",
   "version": "1.0.0",
-  "description": "",
-  "keywords": [],
+  "description": "A modern, real-time expense tracking application built with React and Firebase",
+  "keywords": ["react", "firebase", "expense-tracker", "finance", "budget"],
   "main": "src/index.js",
   "custom-reporter": {
     "type": "module"

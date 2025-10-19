@@ -1,3 +1,15 @@
+/**
+ * CODING PLATFORM SUBMISSION SCRIPT
+ * 
+ * This file is for submitting projects to Coding Ninjas platform.
+ * It is NOT part of the expense tracker application.
+ * 
+ * Usage: node upload_project.js <JWT_TOKEN>
+ * 
+ * Note: This file can be safely removed if you're not using 
+ * the Coding Ninjas platform for submissions.
+ */
+
 const fs = require('fs');
 const archiver = require('archiver');
 const path = require('path');
